@@ -16,6 +16,7 @@
 		F23D2438295D42F200EB06E6 /* kidsnoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2437295D42F200EB06E6 /* kidsnoteTests.swift */; };
 		F23D2442295D42F200EB06E6 /* kidsnoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2441295D42F200EB06E6 /* kidsnoteUITests.swift */; };
 		F23D2444295D42F200EB06E6 /* kidsnoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2443295D42F200EB06E6 /* kidsnoteUITestsLaunchTests.swift */; };
+		F23D2452295E7C5800EB06E6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2451295E7C5800EB06E6 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F23D243D295D42F200EB06E6 /* kidsnoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kidsnoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23D2441295D42F200EB06E6 /* kidsnoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidsnoteUITests.swift; sourceTree = "<group>"; };
 		F23D2443295D42F200EB06E6 /* kidsnoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidsnoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F23D2451295E7C5800EB06E6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = API.swift; path = ../../../API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				F23D2420295D42F100EB06E6 /* AppDelegate.swift */,
 				F23D2422295D42F100EB06E6 /* SceneDelegate.swift */,
 				F23D2424295D42F100EB06E6 /* ViewController.swift */,
+				F23D2450295E7C3800EB06E6 /* Module */,
 				F23D2426295D42F100EB06E6 /* Main.storyboard */,
 				F23D2429295D42F200EB06E6 /* Assets.xcassets */,
 				F23D242B295D42F200EB06E6 /* LaunchScreen.storyboard */,
@@ -125,6 +128,14 @@
 				F23D2443295D42F200EB06E6 /* kidsnoteUITestsLaunchTests.swift */,
 			);
 			path = kidsnoteUITests;
+			sourceTree = "<group>";
+		};
+		F23D2450295E7C3800EB06E6 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F23D2451295E7C5800EB06E6 /* API.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			files = (
 				F23D2425295D42F100EB06E6 /* ViewController.swift in Sources */,
 				F23D2421295D42F100EB06E6 /* AppDelegate.swift in Sources */,
+				F23D2452295E7C5800EB06E6 /* API.swift in Sources */,
 				F23D2423295D42F100EB06E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
