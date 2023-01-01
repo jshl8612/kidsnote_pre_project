@@ -18,11 +18,12 @@ final class APITests: XCTestCase {
         
         Task {
             do {
-                let result = try await API().request(type: SearchResult.self, url: url!)
+                let result = try await API().request(type: VolumeSearchResult.self, url: url!)
                 XCTAssertNotNil(result)
                 exp.fulfill()
             }
             catch {
+                print(error)
                 exp.fulfill()
             }
         }
