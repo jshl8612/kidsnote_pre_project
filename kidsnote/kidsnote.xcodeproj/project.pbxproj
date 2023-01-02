@@ -29,10 +29,10 @@
 		F23D247D296265A500EB06E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D247C296265A500EB06E6 /* HomeViewController.swift */; };
 		F23D24802962670200EB06E6 /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F23D247F2962670200EB06E6 /* FlexLayout */; };
 		F23D24822962670200EB06E6 /* FlexLayoutYoga in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24812962670200EB06E6 /* FlexLayoutYoga */; };
-		F23D24842962670200EB06E6 /* FlexLayoutYogaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24832962670200EB06E6 /* FlexLayoutYogaKit */; };
 		F23D248A29626AA400EB06E6 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F23D248929626AA400EB06E6 /* PinLayout */; };
 		F23D248D29626AF100EB06E6 /* VolumeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D248C29626AF100EB06E6 /* VolumeItemCell.swift */; };
 		F23D24912962761200EB06E6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24902962761200EB06E6 /* HomeViewModel.swift */; };
+		F23D249B2962805D00EB06E6 /* FlexLayoutYogaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F23D249A2962805D00EB06E6 /* FlexLayoutYogaKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +85,8 @@
 			files = (
 				F23D24802962670200EB06E6 /* FlexLayout in Frameworks */,
 				F23D24822962670200EB06E6 /* FlexLayoutYoga in Frameworks */,
+				F23D249B2962805D00EB06E6 /* FlexLayoutYogaKit in Frameworks */,
 				F23D248A29626AA400EB06E6 /* PinLayout in Frameworks */,
-				F23D24842962670200EB06E6 /* FlexLayoutYogaKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +114,7 @@
 				F23D2436295D42F200EB06E6 /* kidsnoteTests */,
 				F23D2440295D42F200EB06E6 /* kidsnoteUITests */,
 				F23D241E295D42F100EB06E6 /* Products */,
+				F23D24992962805D00EB06E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -216,6 +217,13 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		F23D24992962805D00EB06E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,8 +243,8 @@
 			packageProductDependencies = (
 				F23D247F2962670200EB06E6 /* FlexLayout */,
 				F23D24812962670200EB06E6 /* FlexLayoutYoga */,
-				F23D24832962670200EB06E6 /* FlexLayoutYogaKit */,
 				F23D248929626AA400EB06E6 /* PinLayout */,
+				F23D249A2962805D00EB06E6 /* FlexLayoutYogaKit */,
 			);
 			productName = kidsnote;
 			productReference = F23D241D295D42F100EB06E6 /* kidsnote.app */;
@@ -550,6 +558,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X893KGQD89;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"FLEXLAYOUT_SWIFT_PACKAGE=1",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kidsnote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -578,6 +590,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X893KGQD89;
+				GCC_PREPROCESSOR_DEFINITIONS = "FLEXLAYOUT_SWIFT_PACKAGE=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kidsnote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -745,15 +758,15 @@
 			package = F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
 			productName = FlexLayoutYoga;
 		};
-		F23D24832962670200EB06E6 /* FlexLayoutYogaKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
-			productName = FlexLayoutYogaKit;
-		};
 		F23D248929626AA400EB06E6 /* PinLayout */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F23D248829626AA400EB06E6 /* XCRemoteSwiftPackageReference "PinLayout" */;
 			productName = PinLayout;
+		};
+		F23D249A2962805D00EB06E6 /* FlexLayoutYogaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayoutYogaKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
