@@ -30,6 +30,7 @@
 		F23D24802962670200EB06E6 /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F23D247F2962670200EB06E6 /* FlexLayout */; };
 		F23D24822962670200EB06E6 /* FlexLayoutYoga in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24812962670200EB06E6 /* FlexLayoutYoga */; };
 		F23D24842962670200EB06E6 /* FlexLayoutYogaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24832962670200EB06E6 /* FlexLayoutYogaKit */; };
+		F23D248A29626AA400EB06E6 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F23D248929626AA400EB06E6 /* PinLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 			files = (
 				F23D24802962670200EB06E6 /* FlexLayout in Frameworks */,
 				F23D24822962670200EB06E6 /* FlexLayoutYoga in Frameworks */,
+				F23D248A29626AA400EB06E6 /* PinLayout in Frameworks */,
 				F23D24842962670200EB06E6 /* FlexLayoutYogaKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +222,7 @@
 				F23D247F2962670200EB06E6 /* FlexLayout */,
 				F23D24812962670200EB06E6 /* FlexLayoutYoga */,
 				F23D24832962670200EB06E6 /* FlexLayoutYogaKit */,
+				F23D248929626AA400EB06E6 /* PinLayout */,
 			);
 			productName = kidsnote;
 			productReference = F23D241D295D42F100EB06E6 /* kidsnote.app */;
@@ -295,6 +298,7 @@
 			mainGroup = F23D2414295D42F100EB06E6;
 			packageReferences = (
 				F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */,
+				F23D248829626AA400EB06E6 /* XCRemoteSwiftPackageReference "PinLayout" */,
 			);
 			productRefGroup = F23D241E295D42F100EB06E6 /* Products */;
 			projectDirPath = "";
@@ -704,6 +708,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		F23D248829626AA400EB06E6 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -721,6 +733,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
 			productName = FlexLayoutYogaKit;
+		};
+		F23D248929626AA400EB06E6 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D248829626AA400EB06E6 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
