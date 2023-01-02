@@ -33,6 +33,9 @@
 		F23D248D29626AF100EB06E6 /* VolumeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D248C29626AF100EB06E6 /* VolumeItemCell.swift */; };
 		F23D24912962761200EB06E6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24902962761200EB06E6 /* HomeViewModel.swift */; };
 		F23D249B2962805D00EB06E6 /* FlexLayoutYogaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F23D249A2962805D00EB06E6 /* FlexLayoutYogaKit */; };
+		F23D24A52962827200EB06E6 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24A42962827200EB06E6 /* RxCocoa */; };
+		F23D24A72962827200EB06E6 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24A62962827200EB06E6 /* RxRelay */; };
+		F23D24A92962827200EB06E6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24A82962827200EB06E6 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,10 +86,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23D24A72962827200EB06E6 /* RxRelay in Frameworks */,
 				F23D24802962670200EB06E6 /* FlexLayout in Frameworks */,
 				F23D24822962670200EB06E6 /* FlexLayoutYoga in Frameworks */,
+				F23D24A52962827200EB06E6 /* RxCocoa in Frameworks */,
 				F23D249B2962805D00EB06E6 /* FlexLayoutYogaKit in Frameworks */,
 				F23D248A29626AA400EB06E6 /* PinLayout in Frameworks */,
+				F23D24A92962827200EB06E6 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +251,9 @@
 				F23D24812962670200EB06E6 /* FlexLayoutYoga */,
 				F23D248929626AA400EB06E6 /* PinLayout */,
 				F23D249A2962805D00EB06E6 /* FlexLayoutYogaKit */,
+				F23D24A42962827200EB06E6 /* RxCocoa */,
+				F23D24A62962827200EB06E6 /* RxRelay */,
+				F23D24A82962827200EB06E6 /* RxSwift */,
 			);
 			productName = kidsnote;
 			productReference = F23D241D295D42F100EB06E6 /* kidsnote.app */;
@@ -321,6 +330,7 @@
 			packageReferences = (
 				F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */,
 				F23D248829626AA400EB06E6 /* XCRemoteSwiftPackageReference "PinLayout" */,
+				F23D24A32962827200EB06E6 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = F23D241E295D42F100EB06E6 /* Products */;
 			projectDirPath = "";
@@ -745,6 +755,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		F23D24A32962827200EB06E6 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -767,6 +785,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
 			productName = FlexLayoutYogaKit;
+		};
+		F23D24A42962827200EB06E6 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D24A32962827200EB06E6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F23D24A62962827200EB06E6 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D24A32962827200EB06E6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		F23D24A82962827200EB06E6 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D24A32962827200EB06E6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
