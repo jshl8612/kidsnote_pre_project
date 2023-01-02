@@ -32,6 +32,7 @@
 		F23D24842962670200EB06E6 /* FlexLayoutYogaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24832962670200EB06E6 /* FlexLayoutYogaKit */; };
 		F23D248A29626AA400EB06E6 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F23D248929626AA400EB06E6 /* PinLayout */; };
 		F23D248D29626AF100EB06E6 /* VolumeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D248C29626AF100EB06E6 /* VolumeItemCell.swift */; };
+		F23D24912962761200EB06E6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24902962761200EB06E6 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		F23D247A2962658A00EB06E6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F23D247C296265A500EB06E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F23D248C29626AF100EB06E6 /* VolumeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeItemCell.swift; sourceTree = "<group>"; };
+		F23D24902962761200EB06E6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			children = (
 				F23D248B29626ADC00EB06E6 /* Subviews */,
 				F23D247A2962658A00EB06E6 /* HomeView.swift */,
+				F23D24902962761200EB06E6 /* HomeViewModel.swift */,
 				F23D247C296265A500EB06E6 /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F23D2425295D42F100EB06E6 /* ViewController.swift in Sources */,
+				F23D24912962761200EB06E6 /* HomeViewModel.swift in Sources */,
 				F23D24592961CF1100EB06E6 /* VolumeSearchResult.swift in Sources */,
 				F23D248D29626AF100EB06E6 /* VolumeItemCell.swift in Sources */,
 				F23D245C2961CF3700EB06E6 /* VolumeItem.swift in Sources */,
