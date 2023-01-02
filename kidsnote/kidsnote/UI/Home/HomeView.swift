@@ -7,56 +7,63 @@
 
 import UIKit
 import FlexLayout
+import RxSwift
+import RxCocoa
 
 class HomeView: UIView {
     fileprivate let container = UIView()
     lazy var searchBar: UISearchBar = {
         let bar = UISearchBar(frame: .zero)
+        bar.searchBarStyle = .default
+        bar.returnKeyType = .search
         return bar
     }()
     
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
+        tableView.register(VolumeItemCell.self, forCellReuseIdentifier: VolumeItemCell.reuseIdentifier)
         return tableView
     }()
     
     fileprivate var items: [VolumeItem] = []
+    private var viewModel = HomeViewModel()
+    private let bag = DisposeBag()
     
     init() {
         super.init(frame: .zero)
+        backgroundColor = .white
         
         container.flex.define { flex in
-            flex.addItem(searchBar).height(40)
-            flex.addItem(tableView).all(0)
+            flex.addItem(tableView).height(100%)
         }
         
         addSubview(container)
+        setupBinding()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
+    private func setupBinding() {
+        searchBar
+            .searchTextField.rx.text
+            .orEmpty
+            .bind(to: self.viewModel.searchObserver)
+            .disposed(by: bag)
+
+        viewModel.content
+            .drive(tableView.rx.items(cellIdentifier: VolumeItemCell.reuseIdentifier, cellType: VolumeItemCell.self)) {
+                (index, volume: VolumeItem, cell) in
+                cell.configure(volume: volume)
+            }
+            .disposed(by: bag)
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
-        
+        container.pin.top().horizontally().bottom().margin(pin.safeArea)
         container.flex.layout()
-    }
-}
-
-extension HomeView: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: VolumeItemCell.reuseIdentifier, for: indexPath) as! VolumeItemCell
-        cell.configure(volume: items[indexPath.row])
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        tableView.contentOffset = .zero
     }
 }
