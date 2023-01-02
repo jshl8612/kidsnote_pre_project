@@ -70,17 +70,21 @@ final class HomeViewModel {
             .disposed(by: bag)
     }
     
-    private func search(byTerm term: String) -> Observable<VolumeSearchResult> {
+    func search(byTerm term: String) -> Observable<VolumeSearchResult> {
+        guard let url = URL(string: "https://www.googleapis.com/books/v1/volumes?q=\(term)&filter=ebooks") else {
+            return Observable.create({_ in Disposables.create()})
+        }
         return Observable.create({ (observer) -> Disposable in
-            if let url = URL(string: "https://www.googleapis.com/books/v1/volumes?q=\(term)&filter=ebooks") {
-                Task {
-                    do {
-                        observer.onNext(try await self.api.request(type: VolumeSearchResult.self, url: url))
-                        observer.onCompleted()
-                    }
-                    catch {
-                        observer.onError(SearchError.notFound)
-                    }
+            Task {
+                do {
+                    let result = try await self.api.request(type: VolumeSearchResult.self, url: url)
+                    
+                    observer.onNext(result)
+                    observer.onCompleted()
+                }
+                catch {
+                    print(error)
+                    observer.onError(SearchError.notFound)
                 }
             }
             return Disposables.create()
