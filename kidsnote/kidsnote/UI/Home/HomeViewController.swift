@@ -8,10 +8,16 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    fileprivate var homeView: HomeView {
+        return self.view as! HomeView
+    }
+    
+    override func loadView() {
+        view = HomeView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
