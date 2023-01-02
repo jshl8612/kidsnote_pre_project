@@ -18,6 +18,14 @@ class VolumeItemCell: UITableViewCell {
        UILabel()
     }()
     
+    fileprivate lazy var authorLabel: UILabel = {
+       UILabel()
+    }()
+    
+    fileprivate lazy var kindLabel: UILabel = {
+       UILabel()
+    }()
+    
     fileprivate lazy var thumbImageView: UIImageView = {
        UIImageView()
     }()
@@ -33,14 +41,41 @@ class VolumeItemCell: UITableViewCell {
         nameLabel.font = UIFont.boldSystemFont(ofSize: 14)
         nameLabel.lineBreakMode = .byTruncatingTail
 
-        contentView.flex.padding(12).define { (flex) in
-            flex.addItem(thumbImageView).size(30)
-            flex.addItem(nameLabel).marginLeft(padding).grow(1)
+        contentView.flex.direction(.row).padding(12).define { (flex) in
+            flex.addItem(thumbImageView).size(CGSize(width: 65, height: 95))
+            flex.addItem().marginLeft(12).define { flex in
+                flex.addItem(nameLabel)
+                flex.addItem(authorLabel).marginTop(5)
+                flex.addItem(kindLabel)
+            }
         }
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public func configure(volume: VolumeItem) {
+        nameLabel.text = volume.volumeInfo?.title
+        nameLabel.flex.markDirty()
+        
+        authorLabel.text = volume.volumeInfo?.authors?.first
+        authorLabel.flex.markDirty()
+        
+        kindLabel.text = volume.kind
+        kindLabel.flex.markDirty()
+        
+        Task {
+            do {
+                if let link = volume.volumeInfo?.imageLinks?.smallThumbnail,
+                    let url = URL(string: link) {
+                    thumbImageView.image = try await ImageLoader().fetch(url)
+                }
+            }
+            catch {
+                print(error)
+            }
+        }
     }
     
     override func layoutSubviews() {
