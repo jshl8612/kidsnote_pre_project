@@ -27,6 +27,9 @@
 		F23D246B2962608000EB06E6 /* ImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24692962608000EB06E6 /* ImageLoaderTests.swift */; };
 		F23D247B2962658A00EB06E6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D247A2962658A00EB06E6 /* HomeView.swift */; };
 		F23D247D296265A500EB06E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D247C296265A500EB06E6 /* HomeViewController.swift */; };
+		F23D24802962670200EB06E6 /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F23D247F2962670200EB06E6 /* FlexLayout */; };
+		F23D24822962670200EB06E6 /* FlexLayoutYoga in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24812962670200EB06E6 /* FlexLayoutYoga */; };
+		F23D24842962670200EB06E6 /* FlexLayoutYogaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24832962670200EB06E6 /* FlexLayoutYogaKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23D24802962670200EB06E6 /* FlexLayout in Frameworks */,
+				F23D24822962670200EB06E6 /* FlexLayoutYoga in Frameworks */,
+				F23D24842962670200EB06E6 /* FlexLayoutYogaKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +216,11 @@
 			dependencies = (
 			);
 			name = kidsnote;
+			packageProductDependencies = (
+				F23D247F2962670200EB06E6 /* FlexLayout */,
+				F23D24812962670200EB06E6 /* FlexLayoutYoga */,
+				F23D24832962670200EB06E6 /* FlexLayoutYogaKit */,
+			);
 			productName = kidsnote;
 			productReference = F23D241D295D42F100EB06E6 /* kidsnote.app */;
 			productType = "com.apple.product-type.application";
@@ -282,6 +293,9 @@
 				Base,
 			);
 			mainGroup = F23D2414295D42F100EB06E6;
+			packageReferences = (
+				F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */,
+			);
 			productRefGroup = F23D241E295D42F100EB06E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -680,6 +694,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/FlexLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F23D247F2962670200EB06E6 /* FlexLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayout;
+		};
+		F23D24812962670200EB06E6 /* FlexLayoutYoga */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayoutYoga;
+		};
+		F23D24832962670200EB06E6 /* FlexLayoutYogaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayoutYogaKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F23D2415295D42F100EB06E6 /* Project object */;
 }
