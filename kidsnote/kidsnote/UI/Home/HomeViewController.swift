@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     }
     
     override func loadView() {
-        view = HomeView()
+        view = HomeView(coordinator: HomeViewCoordinator(self.navigationController!))
     }
     
     override func viewDidLoad() {

@@ -33,10 +33,8 @@ class VolumeItemCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        selectionStyle = .none
+        selectionStyle = .default
         separatorInset = .zero
-        
-        let iconImageView = UIImageView(image: UIImage(named: "method"))
         
         nameLabel.font = UIFont.boldSystemFont(ofSize: 14)
         nameLabel.lineBreakMode = .byTruncatingTail

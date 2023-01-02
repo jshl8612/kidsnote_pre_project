@@ -28,8 +28,10 @@ class HomeView: UIView {
     fileprivate var items: [VolumeItem] = []
     private var viewModel = HomeViewModel()
     private let bag = DisposeBag()
+    private var coordinator: HomeViewCoordinator
     
-    init() {
+    init(coordinator: HomeViewCoordinator) {
+        self.coordinator = coordinator
         super.init(frame: .zero)
         backgroundColor = .white
         
@@ -42,7 +44,7 @@ class HomeView: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
     
     private func setupBinding() {
@@ -58,6 +60,17 @@ class HomeView: UIView {
                 cell.configure(volume: volume)
             }
             .disposed(by: bag)
+        
+        viewModel.searchObserver.onNext("law")
+        
+        Observable
+            .zip(tableView.rx.itemSelected, tableView.rx.modelSelected(VolumeItem.self))
+            .bind { [unowned self] indexPath, model in
+                self.tableView.deselectRow(at: indexPath, animated: true)
+                self.coordinator.pushToPdfView(volume: model)
+            }
+            .disposed(by: bag)
+        
     }
     
     override func layoutSubviews() {
