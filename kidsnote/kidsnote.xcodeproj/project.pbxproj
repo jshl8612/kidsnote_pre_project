@@ -17,14 +17,16 @@
 		F23D2442295D42F200EB06E6 /* kidsnoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2441295D42F200EB06E6 /* kidsnoteUITests.swift */; };
 		F23D2444295D42F200EB06E6 /* kidsnoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2443295D42F200EB06E6 /* kidsnoteUITestsLaunchTests.swift */; };
 		F23D2452295E7C5800EB06E6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2451295E7C5800EB06E6 /* API.swift */; };
-		F23D246729625E9200EB06E6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D246629625E9200EB06E6 /* ImageLoader.swift */; };
-		F23D246B2962608000EB06E6 /* ImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24692962608000EB06E6 /* ImageLoaderTests.swift */; };
 		F23D2454295E813500EB06E6 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2453295E813500EB06E6 /* APITests.swift */; };
 		F23D2455295E8B4900EB06E6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D2451295E7C5800EB06E6 /* API.swift */; };
 		F23D24592961CF1100EB06E6 /* VolumeSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24582961CF1100EB06E6 /* VolumeSearchResult.swift */; };
 		F23D245A2961CF1100EB06E6 /* VolumeSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24582961CF1100EB06E6 /* VolumeSearchResult.swift */; };
 		F23D245C2961CF3700EB06E6 /* VolumeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D245B2961CF3700EB06E6 /* VolumeItem.swift */; };
 		F23D245D2961CF3700EB06E6 /* VolumeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D245B2961CF3700EB06E6 /* VolumeItem.swift */; };
+		F23D246729625E9200EB06E6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D246629625E9200EB06E6 /* ImageLoader.swift */; };
+		F23D246B2962608000EB06E6 /* ImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24692962608000EB06E6 /* ImageLoaderTests.swift */; };
+		F23D247B2962658A00EB06E6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D247A2962658A00EB06E6 /* HomeView.swift */; };
+		F23D247D296265A500EB06E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D247C296265A500EB06E6 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,11 +61,13 @@
 		F23D2441295D42F200EB06E6 /* kidsnoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidsnoteUITests.swift; sourceTree = "<group>"; };
 		F23D2443295D42F200EB06E6 /* kidsnoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidsnoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F23D2451295E7C5800EB06E6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = API.swift; path = ../../../API.swift; sourceTree = "<group>"; };
-		F23D246629625E9200EB06E6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		F23D24692962608000EB06E6 /* ImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderTests.swift; sourceTree = "<group>"; };
 		F23D2453295E813500EB06E6 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		F23D24582961CF1100EB06E6 /* VolumeSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSearchResult.swift; sourceTree = "<group>"; };
 		F23D245B2961CF3700EB06E6 /* VolumeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeItem.swift; sourceTree = "<group>"; };
+		F23D246629625E9200EB06E6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		F23D24692962608000EB06E6 /* ImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderTests.swift; sourceTree = "<group>"; };
+		F23D247A2962658A00EB06E6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F23D247C296265A500EB06E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 				F23D2420295D42F100EB06E6 /* AppDelegate.swift */,
 				F23D2422295D42F100EB06E6 /* SceneDelegate.swift */,
 				F23D2424295D42F100EB06E6 /* ViewController.swift */,
+				F23D24782962657400EB06E6 /* UI */,
 				F23D24572961CEF400EB06E6 /* DataModel */,
 				F23D2450295E7C3800EB06E6 /* Module */,
 				F23D2426295D42F100EB06E6 /* Main.storyboard */,
@@ -155,6 +160,15 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
+		F23D24572961CEF400EB06E6 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				F23D24582961CF1100EB06E6 /* VolumeSearchResult.swift */,
+				F23D245B2961CF3700EB06E6 /* VolumeItem.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		F23D246529625E6200EB06E6 /* LoadImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,13 +177,21 @@
 			path = LoadImage;
 			sourceTree = "<group>";
 		};
-		F23D24572961CEF400EB06E6 /* DataModel */ = {
+		F23D24782962657400EB06E6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F23D24582961CF1100EB06E6 /* VolumeSearchResult.swift */,
-				F23D245B2961CF3700EB06E6 /* VolumeItem.swift */,
+				F23D24792962657400EB06E6 /* Home */,
 			);
-			path = DataModel;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F23D24792962657400EB06E6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F23D247A2962658A00EB06E6 /* HomeView.swift */,
+				F23D247C296265A500EB06E6 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +330,8 @@
 				F23D245C2961CF3700EB06E6 /* VolumeItem.swift in Sources */,
 				F23D2421295D42F100EB06E6 /* AppDelegate.swift in Sources */,
 				F23D246729625E9200EB06E6 /* ImageLoader.swift in Sources */,
+				F23D247D296265A500EB06E6 /* HomeViewController.swift in Sources */,
+				F23D247B2962658A00EB06E6 /* HomeView.swift in Sources */,
 				F23D2452295E7C5800EB06E6 /* API.swift in Sources */,
 				F23D2423295D42F100EB06E6 /* SceneDelegate.swift in Sources */,
 			);
