@@ -13,12 +13,12 @@ class HomeViewController: UIViewController {
     }
     
     override func loadView() {
-        view = HomeView()
+        view = HomeView(coordinator: HomeViewCoordinator(self.navigationController!))
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.navigationItem.titleView = homeView.searchBar
     }
     
 

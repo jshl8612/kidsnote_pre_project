@@ -29,9 +29,18 @@
 		F23D247D296265A500EB06E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D247C296265A500EB06E6 /* HomeViewController.swift */; };
 		F23D24802962670200EB06E6 /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F23D247F2962670200EB06E6 /* FlexLayout */; };
 		F23D24822962670200EB06E6 /* FlexLayoutYoga in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24812962670200EB06E6 /* FlexLayoutYoga */; };
-		F23D24842962670200EB06E6 /* FlexLayoutYogaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24832962670200EB06E6 /* FlexLayoutYogaKit */; };
 		F23D248A29626AA400EB06E6 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F23D248929626AA400EB06E6 /* PinLayout */; };
 		F23D248D29626AF100EB06E6 /* VolumeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D248C29626AF100EB06E6 /* VolumeItemCell.swift */; };
+		F23D24912962761200EB06E6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24902962761200EB06E6 /* HomeViewModel.swift */; };
+		F23D249B2962805D00EB06E6 /* FlexLayoutYogaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F23D249A2962805D00EB06E6 /* FlexLayoutYogaKit */; };
+		F23D24A52962827200EB06E6 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24A42962827200EB06E6 /* RxCocoa */; };
+		F23D24A72962827200EB06E6 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24A62962827200EB06E6 /* RxRelay */; };
+		F23D24A92962827200EB06E6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24A82962827200EB06E6 /* RxSwift */; };
+		F23D24AC29629CC600EB06E6 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24AB29629CC600EB06E6 /* Differentiator */; };
+		F23D24AE29629CC600EB06E6 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24AD29629CC600EB06E6 /* RxDataSources */; };
+		F23D24B32962A85900EB06E6 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24B22962A85900EB06E6 /* PDFViewController.swift */; };
+		F23D24B52962A86700EB06E6 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24B42962A86700EB06E6 /* PDFView.swift */; };
+		F23D24B72962AD0200EB06E6 /* HomeViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D24B62962AD0200EB06E6 /* HomeViewCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +83,10 @@
 		F23D247A2962658A00EB06E6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F23D247C296265A500EB06E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F23D248C29626AF100EB06E6 /* VolumeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeItemCell.swift; sourceTree = "<group>"; };
+		F23D24902962761200EB06E6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F23D24B22962A85900EB06E6 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		F23D24B42962A86700EB06E6 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
+		F23D24B62962AD0200EB06E6 /* HomeViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +94,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23D24A72962827200EB06E6 /* RxRelay in Frameworks */,
 				F23D24802962670200EB06E6 /* FlexLayout in Frameworks */,
 				F23D24822962670200EB06E6 /* FlexLayoutYoga in Frameworks */,
+				F23D24A52962827200EB06E6 /* RxCocoa in Frameworks */,
+				F23D24AC29629CC600EB06E6 /* Differentiator in Frameworks */,
+				F23D249B2962805D00EB06E6 /* FlexLayoutYogaKit in Frameworks */,
+				F23D24AE29629CC600EB06E6 /* RxDataSources in Frameworks */,
 				F23D248A29626AA400EB06E6 /* PinLayout in Frameworks */,
-				F23D24842962670200EB06E6 /* FlexLayoutYogaKit in Frameworks */,
+				F23D24A92962827200EB06E6 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 				F23D2436295D42F200EB06E6 /* kidsnoteTests */,
 				F23D2440295D42F200EB06E6 /* kidsnoteUITests */,
 				F23D241E295D42F100EB06E6 /* Products */,
+				F23D24992962805D00EB06E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +209,7 @@
 		F23D24782962657400EB06E6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F23D24B12962A83C00EB06E6 /* PDFView */,
 				F23D24792962657400EB06E6 /* Home */,
 			);
 			path = UI;
@@ -200,7 +220,9 @@
 			children = (
 				F23D248B29626ADC00EB06E6 /* Subviews */,
 				F23D247A2962658A00EB06E6 /* HomeView.swift */,
+				F23D24902962761200EB06E6 /* HomeViewModel.swift */,
 				F23D247C296265A500EB06E6 /* HomeViewController.swift */,
+				F23D24B62962AD0200EB06E6 /* HomeViewCoordinator.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -211,6 +233,22 @@
 				F23D248C29626AF100EB06E6 /* VolumeItemCell.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		F23D24992962805D00EB06E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F23D24B12962A83C00EB06E6 /* PDFView */ = {
+			isa = PBXGroup;
+			children = (
+				F23D24B22962A85900EB06E6 /* PDFViewController.swift */,
+				F23D24B42962A86700EB06E6 /* PDFView.swift */,
+			);
+			path = PDFView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +270,13 @@
 			packageProductDependencies = (
 				F23D247F2962670200EB06E6 /* FlexLayout */,
 				F23D24812962670200EB06E6 /* FlexLayoutYoga */,
-				F23D24832962670200EB06E6 /* FlexLayoutYogaKit */,
 				F23D248929626AA400EB06E6 /* PinLayout */,
+				F23D249A2962805D00EB06E6 /* FlexLayoutYogaKit */,
+				F23D24A42962827200EB06E6 /* RxCocoa */,
+				F23D24A62962827200EB06E6 /* RxRelay */,
+				F23D24A82962827200EB06E6 /* RxSwift */,
+				F23D24AB29629CC600EB06E6 /* Differentiator */,
+				F23D24AD29629CC600EB06E6 /* RxDataSources */,
 			);
 			productName = kidsnote;
 			productReference = F23D241D295D42F100EB06E6 /* kidsnote.app */;
@@ -310,6 +353,8 @@
 			packageReferences = (
 				F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */,
 				F23D248829626AA400EB06E6 /* XCRemoteSwiftPackageReference "PinLayout" */,
+				F23D24A32962827200EB06E6 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F23D24AA29629CC600EB06E6 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 			);
 			productRefGroup = F23D241E295D42F100EB06E6 /* Products */;
 			projectDirPath = "";
@@ -355,10 +400,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F23D2425295D42F100EB06E6 /* ViewController.swift in Sources */,
+				F23D24912962761200EB06E6 /* HomeViewModel.swift in Sources */,
+				F23D24B52962A86700EB06E6 /* PDFView.swift in Sources */,
 				F23D24592961CF1100EB06E6 /* VolumeSearchResult.swift in Sources */,
+				F23D24B32962A85900EB06E6 /* PDFViewController.swift in Sources */,
 				F23D248D29626AF100EB06E6 /* VolumeItemCell.swift in Sources */,
 				F23D245C2961CF3700EB06E6 /* VolumeItem.swift in Sources */,
 				F23D2421295D42F100EB06E6 /* AppDelegate.swift in Sources */,
+				F23D24B72962AD0200EB06E6 /* HomeViewCoordinator.swift in Sources */,
 				F23D246729625E9200EB06E6 /* ImageLoader.swift in Sources */,
 				F23D247D296265A500EB06E6 /* HomeViewController.swift in Sources */,
 				F23D247B2962658A00EB06E6 /* HomeView.swift in Sources */,
@@ -546,6 +595,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X893KGQD89;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"FLEXLAYOUT_SWIFT_PACKAGE=1",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kidsnote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -574,6 +627,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X893KGQD89;
+				GCC_PREPROCESSOR_DEFINITIONS = "FLEXLAYOUT_SWIFT_PACKAGE=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = kidsnote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -728,6 +782,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		F23D24A32962827200EB06E6 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F23D24AA29629CC600EB06E6 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -741,15 +811,40 @@
 			package = F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
 			productName = FlexLayoutYoga;
 		};
-		F23D24832962670200EB06E6 /* FlexLayoutYogaKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
-			productName = FlexLayoutYogaKit;
-		};
 		F23D248929626AA400EB06E6 /* PinLayout */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F23D248829626AA400EB06E6 /* XCRemoteSwiftPackageReference "PinLayout" */;
 			productName = PinLayout;
+		};
+		F23D249A2962805D00EB06E6 /* FlexLayoutYogaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D247E2962670200EB06E6 /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayoutYogaKit;
+		};
+		F23D24A42962827200EB06E6 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D24A32962827200EB06E6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F23D24A62962827200EB06E6 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D24A32962827200EB06E6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		F23D24A82962827200EB06E6 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D24A32962827200EB06E6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F23D24AB29629CC600EB06E6 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D24AA29629CC600EB06E6 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		F23D24AD29629CC600EB06E6 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D24AA29629CC600EB06E6 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
