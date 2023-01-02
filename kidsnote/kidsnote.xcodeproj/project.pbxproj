@@ -31,6 +31,7 @@
 		F23D24822962670200EB06E6 /* FlexLayoutYoga in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24812962670200EB06E6 /* FlexLayoutYoga */; };
 		F23D24842962670200EB06E6 /* FlexLayoutYogaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F23D24832962670200EB06E6 /* FlexLayoutYogaKit */; };
 		F23D248A29626AA400EB06E6 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = F23D248929626AA400EB06E6 /* PinLayout */; };
+		F23D248D29626AF100EB06E6 /* VolumeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D248C29626AF100EB06E6 /* VolumeItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		F23D24692962608000EB06E6 /* ImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderTests.swift; sourceTree = "<group>"; };
 		F23D247A2962658A00EB06E6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F23D247C296265A500EB06E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F23D248C29626AF100EB06E6 /* VolumeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,10 +198,19 @@
 		F23D24792962657400EB06E6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F23D248B29626ADC00EB06E6 /* Subviews */,
 				F23D247A2962658A00EB06E6 /* HomeView.swift */,
 				F23D247C296265A500EB06E6 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		F23D248B29626ADC00EB06E6 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				F23D248C29626AF100EB06E6 /* VolumeItemCell.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +356,7 @@
 			files = (
 				F23D2425295D42F100EB06E6 /* ViewController.swift in Sources */,
 				F23D24592961CF1100EB06E6 /* VolumeSearchResult.swift in Sources */,
+				F23D248D29626AF100EB06E6 /* VolumeItemCell.swift in Sources */,
 				F23D245C2961CF3700EB06E6 /* VolumeItem.swift in Sources */,
 				F23D2421295D42F100EB06E6 /* AppDelegate.swift in Sources */,
 				F23D246729625E9200EB06E6 /* ImageLoader.swift in Sources */,
