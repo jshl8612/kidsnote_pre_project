@@ -61,8 +61,6 @@ class HomeView: UIView {
             }
             .disposed(by: bag)
         
-        viewModel.searchObserver.onNext("law")
-        
         Observable
             .zip(tableView.rx.itemSelected, tableView.rx.modelSelected(VolumeItem.self))
             .bind { [unowned self] indexPath, model in
